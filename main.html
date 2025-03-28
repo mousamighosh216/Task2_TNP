@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main_box">
+        <div class="hero">
+            <h1 class="header">Balancing Learning and Earning</h1>
+            <p class="subhead">Fill the form to register</p>
+
+            <div class="time_box">
+                <img src="https://img.icons8.com/?size=100&id=adWkIAvqwPok&format=png&color=FFFFFF" alt="" class="calender">
+            <p class="time_date">Friday, April 4 
+            </br> 
+                <span class="time">11:00 AM - 5:00 PM</span> 
+            </p>
+            </div>
+
+            <div class="location_box">
+                <a href="https://maps.app.goo.gl/vcK3sAf5Jo6eyD539" title="location link" class="pointer">
+                    <img src="https://img.icons8.com/?size=100&id=85049&format=png&color=FFFFFF" class="pointer" alt="">
+                </a>
+                <p class="location">Rajiv Gandhi Proudyogiki Vishwavidyalaya (R.G.P.V)
+                </br>
+                <span class="place">Bhopal, Madhya Pradesh</span>
+                </p>
+            </div>
+        </div>
+        <div class="form">
+            <div>
+                <h1 class="login">Register</h1>
+            </div>
+
+                <div class="f_name">
+                    <label for="name" style="width: 30%;" >Name:</label>
+                    <input type="text" placeholder="Name" id="name" class="name" required>
+                </div>
+
+                <div class="mail">
+                    <label for="email" style="width: 30%;" >E-mail:</label>
+                    <input type="email" placeholder="E-Mail" id="email" class="email" required>
+                </div>
+
+                <div class="stud">
+                    <label for="year_study" style="width: 30%;" >Year of Study:</label>
+                    <select id="year_study" name="year_study" class="stud_class" required>
+                        <option value="" disabled selected>Select your year</option>
+                        <option value="1">1st</option>
+                        <option value="2">2nd</option>
+                        <option value="3">3rd</option>
+                        <option value="4">4th</option>
+                    </select>
+                </div>
+
+                <div class="check-i">
+                    <label for="check_in" style="width: 30%;" >Check-in:</label>
+                    <input type="datetime-local" id="check_in" name="check_in" class="check_in" required>
+                </div>
+
+
+                <div class="check-o">
+                    <label for="check_out" style="width: 30%;">Check-out:</label>
+                    <input type="datetime-local" id="check_out" name="check_out" class="check_out" required>
+                </div>
+                <div> 
+                    <button class="register">RSVP</button>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

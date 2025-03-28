@@ -1,0 +1,215 @@
+textarea:focus, input:focus{
+    outline: none;
+}
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, #d9dceb, #a9c3e9, #8db1e7);
+    background-size: 300% 300%; 
+    animation: Animation 8s ease infinite;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+@keyframes Animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.main_box{
+    width: 80%; 
+    height: 80%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 20px;
+    /* border: black 2px solid; */
+    margin: 0;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+.hero{
+    background-color: #87b3f5;
+    margin: 0;
+    padding: 3px;
+    color: white;
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 120px;
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* .header, .subhead, .time_date, .location {
+    display: block;
+    margin-bottom: 10px; 
+} */
+
+
+.header{
+    /* font-size: 000em; */
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0; 
+    padding: 10px;
+}
+
+.subhead{
+    font-size: em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0; 
+    padding: 10px;
+}
+
+.time_date,.location{
+    /* font-size: 1.5em; */
+    /* display: flex; */
+    justify-content: left;
+    align-items: left;
+    margin-top: 10px; 
+    padding: 10px;
+    font-weight: bold;
+}
+
+.time,.place{
+    font-weight: lighter;
+    font-size: small;
+}
+
+.location_box,.time_box{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    margin-left: 10px;
+}
+
+.calender{
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+.pointer{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    gap: 10px; 
+    align-items: center;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f_name, .mail,.stud,.check-i,.check-o{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+/* .stud_class{
+    width: 70%;
+} */
+
+/* .check{
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: left; */
+    /* align-items: center; */
+    /* gap: 10px; */
+    /* width: 100%; */
+    /* margin-top: 10px; */
+/* }  */
+
+.check_i,.check_o{
+    display: flex;
+    margin-left: 30px;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 60%;
+}
+
+.name,.email,.stud_class,.check_in,.check_out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border:none;
+    height: 30px;
+    padding: 5px;
+    padding-left: 20px;
+    width: 60%;
+    font:sans-serif;
+    color: gray;
+}
+
+
+button{
+    margin-top: 30px;
+    background-color: #87b3f5;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    width: 100%;
+}
+
+button:hover{
+    background-color: #6a9fe0;
+    transition: 0.3s;
+}
+button:active{
+    background-color: #4f8cd6;
+    transition: 0.1s;
+}
