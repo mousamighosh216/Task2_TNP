@@ -203,6 +203,10 @@ body {
     width: 100%;
 }
 
+.regis{
+    display: flex; justify-content: center; align-items: center;
+}
+
 button{
     margin-top: 30px;
     background-color: #87b3f5;
@@ -243,18 +247,53 @@ button:active{
         padding: 10px;
         margin-left: 10px;
     }
-    /* .header, .subhead, .time_date, .location {
-        font-size: 1.5em;
-    } */
+    .subhead, .time_date, .location {
+        font-size: 0.9em;
+        margin: 5px;
+    }
+
+    .pointer, .calender{
+        width: 25px;
+        height: 25px;
+        /* margin-top: 5px; */
+    }
+
+    .f_name, .mail,.stud,.check-i,.check-o{
+        font-size: 1em;
+        margin: 5px;
+    }
+    
+    .name,.email,.check_in,.check_out{
+        font-size: 1em;
+        margin: 5px;
+        width: 50%;
+        height: 20px;
+    }
+
+    .regis{    
+        /* margin-bottom: px; */
+        align-items: center;
+    }
     .register{
-        margin-top: 5px;
+        height: 25px;
+    }
+
+    .login{
+        height: 10px;
     }
 }
+
+
+
 @media (max-width: 480px) {
+    body{
+        font-size: smaller;
+        margin: 10px;
+    }
     .main_box{
         flex-direction: column;
-        width: 100%;
-        height: 100%;
+        /* width: 100%;
+        height: 100%; */
     }
     .hero{
         width: 100%;
@@ -264,16 +303,41 @@ button:active{
     .form{
         width: 100%;
         height: 100%;
-        padding: 10px;
-        /* margin-left: 10px; */
+        
+        /* padding: px; */
+        /* margin: 10px; */
     }
-    /* .header, .subhead, .time_date, .location {
-        font-size: 1.2em;
-    } */
+    .subhead, .time_date, .location {
+        font-size: 0.9em;
+        margin: 5px;
+    }
 
-    .register{
-        margin-top: 10px;
+    .pointer, .calender{
+        width: 25px;
+        height: 25px;
+        /* margin-top: 5px; */
     }
+
+    .f_name, .mail,.stud,.check-i,.check-o{
+        font-size: 1em;
+        margin: 5px;
+    }
+    
+    .name,.email,.check_in,.check_out{
+        font-size: 1em;
+        margin: 5px;
+        width: 50%;
+        height: 20px;
+    }
+
+    .regis{    
+        /* margin-bottom: px; */
+        align-items: center;
+    }
+    .register{
+        height: 25px;
+    }
+
 }
 
 .register{
