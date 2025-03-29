@@ -1,7 +1,9 @@
 textarea:focus, input:focus{
     outline: none;
-    background-color: rgb(237, 231, 231);
+    background-color: #e5e9ff;
 }
+
+
 html {
     height: 100%;
     overflow: hidden;
@@ -109,6 +111,10 @@ body {
     margin-left: 10px;
 }
 
+.location_box{
+    margin-bottom: 10px;
+}
+
 .calender{
     width: 40px;
     height: 40px;
@@ -190,8 +196,12 @@ body {
     width: 60%;
     font:sans-serif;
     color: gray;
+    margin-bottom: 10px;
 }
 
+.reg_form{
+    width: 100%;
+}
 
 button{
     margin-top: 30px;
@@ -213,4 +223,60 @@ button:hover{
 button:active{
     background-color: #4f8cd6;
     transition: 0.1s;
+}
+
+
+@media (max-width: 768px) {
+    .main_box{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .hero{
+        width: 100%;
+        height: 40%;
+        border-radius: 20px;
+    }
+    .form{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        margin-left: 10px;
+    }
+    /* .header, .subhead, .time_date, .location {
+        font-size: 1.5em;
+    } */
+    .register{
+        margin-top: 5px;
+    }
+}
+@media (max-width: 480px) {
+    .main_box{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .hero{
+        width: 100%;
+        height: 40%;
+        border-radius: 20px;
+    }
+    .form{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        /* margin-left: 10px; */
+    }
+    /* .header, .subhead, .time_date, .location {
+        font-size: 1.2em;
+    } */
+
+    .register{
+        margin-top: 10px;
+    }
+}
+
+.register{
+    margin-top:15px ;
+    width: 40%;
 }
