@@ -1,5 +1,6 @@
 textarea:focus, input:focus{
     outline: none;
+    background-color: rgb(237, 231, 231);
 }
 html {
     height: 100%;
